@@ -2,8 +2,14 @@ package Assignments;
 
 public class jan5hw {
 
-    public static void main(String[] args) {
+    public static void saysHello(String name, int age){
+        System.out.println("Hello " + name + age);
+    }
 
-        System.out.println(4);
+
+    public static void main(String[] args) {
+        saysHello("sayeem", 30);
+        saysHello("Mike", 320);
+
     }
 }
