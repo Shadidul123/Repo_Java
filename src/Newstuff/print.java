@@ -26,7 +26,7 @@ public class print {
         {
             this.numberOfPages = this.numberOfPages - numberOfPages;
             this.isSingleSided = isSingleSided;
-            tonerLevel = tonerLevel - numberOfPages;
+            tonerLevel -= numberOfPages;
             System.out.println("Toner Level Remaining: " + tonerLevel);
             System.out.println("Number of pages remaining: " + this.numberOfPages);
 
@@ -39,8 +39,8 @@ public class print {
         if (this.numberOfPages <= 100 && tonerLevel <= 100)
         {
             this.isDoubleSided = isDoubleSided;
-            this.numberOfPages = this.numberOfPages - numberOfPages;     //100-20=80
-            tonerLevel = tonerLevel - numberOfPages * 2; // 100-(20*2) = 60
+            this.numberOfPages -= numberOfPages;     //100-20=80
+            tonerLevel -= numberOfPages * 2; // 100-(20*2) = 60
             System.out.println("Toner Level Remaining: " + tonerLevel);
             System.out.println("Number of pages remaining: " + this.numberOfPages);
         }

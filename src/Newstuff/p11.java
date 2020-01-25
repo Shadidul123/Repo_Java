@@ -4,11 +4,9 @@ public class p11 {
     public static void main(String[] args) {
         print printer = new print();
 
-        printer.setTonerLevel(1000);
-        printer.setNumberOfPages(90);
-        printer.getStatusSinglePagedPrint(20,true);
-        System.out.println(printer.getTonerLevel());
-        printer.checkLowToner();
+        printer.setTonerLevel(100);
+        printer.setNumberOfPages(100);
+        printer.getStatusDoublePagedPrint(20,true);
 
 
     }
