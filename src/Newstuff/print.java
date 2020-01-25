@@ -26,7 +26,7 @@ public class print {
         {
             this.numberOfPages = this.numberOfPages - numberOfPages;
             this.isSingleSided = isSingleSided;
-            tonerLevel -= numberOfPages;
+            tonerLevel = this.numberOfPages;
             System.out.println("Toner Level Remaining: " + tonerLevel);
             System.out.println("Number of pages remaining: " + this.numberOfPages);
 

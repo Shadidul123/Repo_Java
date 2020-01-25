@@ -6,7 +6,7 @@ public class p11 {
 
         printer.setTonerLevel(100);
         printer.setNumberOfPages(100);
-        printer.getStatusDoublePagedPrint(20,true);
+        printer.getStatusSinglePagedPrint(20,true);
 
 
     }
